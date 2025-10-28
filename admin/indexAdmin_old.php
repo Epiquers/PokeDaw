@@ -39,12 +39,29 @@
 				<div class="col-9 col-sm-8 col-md-6 col-xl-4 mb-5 mt-3">
 					<div class="row justify justify-content-center titulos mt-5 mb-4">
 						<div class="col-12 mt-5">
-							<p class="h2 text-center">Bienvenido a tú pokédex personal <?php echo $_SESSION['name']; ?></p>
+							<p class="h2 text-center">ACCEDE A TU CUENTA</p>
 						</div>
 						<div class="col-8 mt-4">
 							<div class="row">
-								<h1 class="text-center">Pokemon</h1>
+								<form action="">
+									<div class="col-12">
+										<input type="text" class="form-control" placeholder="NIF">
+										<span class="form-text text-muted small">EJ: 12345678X</span>
+									</div>
+									<div class="col-12 mt-3 mb-2">
+										<input type="password" class="form-control" id="pass" name="pass" placeholder="CONTRASEÑA">
+									</div>
+									<div class="col-12 mt-4 d-grid mb-5">
+										<button class="btn btn-lg" type="submit">INICIAR SESIÓN</button>
+									</div>
+								</form>
 							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 mb-1">
+							<p class="text-center cuenta">¿NECESITAS UNA CUENTA?</p>
+							<a class="btn w-100" href="registro.html" role="button">REGÍSTRATE</a>
 						</div>
 					</div>
 				</div>

@@ -50,7 +50,18 @@
 										<input type="text" id="dir" class="form-control" placeholder="Dirección" required>
 										<label for="dir">Dirección</label>
 									</div>
-
+									<div class="form-floating mb-3 ">
+										<input type="date" id="fecha" class="form-control" placeholder="Fecha de nacimiento" required>
+										<label for="fecha">Fecha de nacimiento</label>
+									</div>
+									<div class="form-floating mb-3 ">
+										<input type="email" class="form-control" id="email" placeholder="Email">
+										<label for="email">Email <span class="form-text text-muted small float-end">EJ: xxxxxx@pokedaw.es</span></label>
+									</div>
+									<div class="form-floating">
+										<input type="number" class="form-control" id="tel" placeholder="Teléfonos">
+										<label for="email">Teléfonos<span class="form-text text-muted float-end small"> EJ: 968647842 || 636365874</span></label>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -59,12 +70,60 @@
 							<div class="row justify-content-start">
 								<div class="col-12">
 									<div class="form-floating mb-3 ">
-										<input type="email" class="form-control" id="email" placeholder="Email">
-										<label for="email">Email <span class="form-text text-muted small float-end">EJ: xxxxxx@pokedaw.es</span></label>
+										<input type="text" id="tit" class="form-control" placeholder="Titulaciones y Hbilitaciones" required>
+										<label for="tit">Titulaciones y Habilitaciones</label>
 									</div>
-									<div class="form-floating mb-3">
-										<input type="number" class="form-control" id="tel" placeholder="Teléfonos">
-										<label for="email">Teléfonos<span class="form-text text-muted float-end small"> EJ: 968647842 || 636365874</span></label>
+									<div class="form-floating mb-3 ">
+										<select class="form-select" id="lista" name="lista">
+											<option value="1">Administrativo</option>
+											<option value="1">Profesor</option>
+											<option value="1">Gestión económica</option>
+											<option value="other">Secretaria</option>
+											<option value="other">Jefatura</option>
+											<option value="other">Dirección</option>
+											<option value="other">Vicepresidencia</option>
+											<option value="other">Presidencia</option>
+										</select>
+										<label for="lista">Cargo</label>
+									</div>
+									<div class="form-floating mb-3 ">
+										<select class="form-select" id="tutor" name="tutor">
+											<option value="1">No</option>
+											<option value="1"></option>
+											<option value="1"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+										</select>
+										<label for="tutor">Tutor</label>
+									</div>
+									<div class="form-floating mb-3 ">
+										<select class="form-select" id="etapa" name="etapa">
+											<option value="1">Infantil</option>
+											<option value="1"></option>
+											<option value="1"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+										</select>
+										<label for="Etapa">Etapa</label>
+									</div>
+									<div class="form-floating mb-3 ">
+										<select class="form-select" id="tipo" name="tipo">
+											<option value="1">Socio</option>
+											<option value="1"></option>
+											<option value="1"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+											<option value="other"></option>
+										</select>
+										<label for="Tipo">Tipo</label>
 									</div>
 									<div class="form-floating mb-3 ">
 										<input type="password" class="form-control" id="pass" placeholder="Contraseña">

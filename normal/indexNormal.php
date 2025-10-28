@@ -1,5 +1,6 @@
 <?php
 	include("seguridad.php");
+	include("../config.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,21 +17,22 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 	<link href="../styles.css" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="../img/grifo.ico">
-	<title>GESTIÓN - CES VEGA MEDIA</title>
+	<title>POKEDEX</title>
 
 
 </head>
 
 <body>
-	<!--Cabecera-->
+	
 	<?php
 
-	include("headerNormal.php");
-	include("navNormal.php");
+		// Cabecera
+		include("headerNormal.php");
+
+		// Barra de navegación
+		include("navNormal.php");
 
 	?>
-
-	<!--Barra de navegación-->
 
 	<!--Contenido de la página-->
 	<section>
@@ -39,25 +41,22 @@
 				<div class="col-9 col-sm-8 col-md-6 col-xl-4 mb-5 mt-3">
 					<div class="row justify justify-content-center titulos mt-5 mb-4">
 						<div class="col-12 mt-5">
-							<p class="h2 text-center">Bienvenido <?php echo $_SESSION['name']; ?></p>
+							<p class="h2 text-center">Bienvenido a tú pokédex personal <?php echo $_SESSION['name']; ?></p>
 						</div>
 						<div class="col-8 mt-4">
 							<div class="row">
-								<h1>Pokemon</h1>
+								<h1 class="text-center">Pokemon</h1>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<?php
-
-	include("../footer.php");
-	
-
+		// Footer
+		include("footerNormal.php");
 	?>
 
 	<script src="../Bootstrap/js/bootnavbar.js"></script>
