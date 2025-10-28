@@ -1,0 +1,144 @@
+
+
+/*GENERAL*/
+section{
+	background-color: #f08834;
+}
+.titulos{		 
+	border-radius:8px;	
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+	color: #dd2c0d;
+	border:3px solid #dd2c0d;		
+	background-color: rgb(250, 224, 110);	
+}
+
+.btn{
+	background-color: #dd2c0d;
+	color:white;		
+	font-weight: bold;	
+}
+.btn:hover{
+	color:#dd2c0d;
+	border: 1px solid #dd2c0d;
+}
+.h2{
+	font-size: 21pt;
+}
+.cuenta{
+	font-size: 13pt;
+	color: #dd2c0d;
+}
+.form-text{
+	font-size: 9pt;
+}
+
+
+/*HEADER*/
+.cabecera{
+	
+	background-color:#dd2c0d;
+}
+
+.h1{
+	color: #ffffff;			
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+.centro{
+	font-size: 15pt;
+	font-weight: bold;
+	color: white;
+}
+
+.izq{
+	background-image: linear-gradient(to right,white, #dd2c0d);
+	height: 5px;
+}
+.der{
+	background-image: linear-gradient(to right, #dd2c0d,white);
+	height: 5px;
+}
+.v{
+	font-size: 60pt;
+	font-weight: bold;
+	color:black;				
+}
+
+			
+
+/*FOOTER*/
+
+.footer1{
+	background-image: linear-gradient(180deg,rgb(59, 59, 59), rgb(32, 32, 32));	
+	color:white;
+}
+.footer2{
+	background-color: rgb(59, 59, 59);
+	color:white;
+}
+footer a{
+	text-decoration: none;
+	color:white;
+}	
+.ve{
+	font-size: 60pt;
+	font-weight: bold;
+	color:#dd2c0d;				
+}
+.me{
+	font-size: 60pt;
+	font-weight: bold;
+	color: white;						
+}
+.links a{
+	color:#dd2c0d;
+}
+.links a:hover{
+	
+	color: white;
+}
+footer a:hover{
+	color:white;
+}
+
+/*NAVBAR*/
+
+.dropdown-menu {
+	margin-top: 0;
+  }
+  .dropdown-menu .dropdown-toggle::after {
+	vertical-align: middle;
+	border-left: 4px solid;
+	border-bottom: 4px solid transparent;
+	border-top: 4px solid transparent;
+  }
+  .dropdown-menu .dropdown .dropdown-menu {
+	left: 100%;
+	top: 0%;
+	margin: 0 20px;
+	border-width: 0;
+  }
+  .dropdown-menu .dropdown .dropdown-menu.left {
+	right: 100%;
+	left: auto;
+  }
+  @media (min-width: 768px) {
+	.dropdown-menu .dropdown .dropdown-menu {
+	  margin: 0;
+	  border-width: 1px;
+	}
+  
+	.dropdown-menu > li a:hover,
+	.dropdown-menu > li.show {
+	  background: #dd2c0d;
+	  color: white;
+	}
+	.dropdown-menu > li.show > a {
+	  color: white;
+	}
+  }
+
+
+
+
