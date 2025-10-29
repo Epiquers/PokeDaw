@@ -40,7 +40,7 @@
 					$sms = "Rol incorrecto, consulte con el administrador";
 				}
 			} else if (mysqli_num_rows($result) > 1) {
-				$sms="Fallo de integridad en la bbdd";
+				//"Fallo de integridad en la bbdd";
 			} else {
 				$sms = "Usuario no registrado o password incorrecto o email incorrecto";
 			}
