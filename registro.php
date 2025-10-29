@@ -92,6 +92,7 @@ session_start();
 							</div>
 							<div class="col-12 col-md-6 d-grid mb-4 mt-2">
 								<button class="btn btn-lg" type="submit">CREAR CUENTA</button>
+								<a style="color: red" class="text-center mt-2" href="index.php">Volver al inicio</a>
 							</div>
 						</div>
 					</div>
