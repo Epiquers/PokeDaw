@@ -18,9 +18,6 @@
 					</div>				
 				</div>		
 				<div class="row justify-content-center align-items-center">
-					<div class="col-auto" >						
-							<img src="<?php echo BASE_URL; ?>img/pokeball.png" style="width:80px">						
-					</div>
 					<div class="col-auto">						
 							<span class="pf"> PK</span><span class="d">DX</span>							
 					</div>

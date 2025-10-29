@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main_navbar">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main_navbar">
 		<div class="container-fluid">
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,21 +39,21 @@
 									<li><a class="dropdown-item" href="#">Asignar</a></li>
 
 									<!-- 
-								Para añadir otro nivel
+									Para añadir otro nivel
 
-								<li class="nav-item dropdown">
-							  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-								Dropdown
-							  </a>
-							  <ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><hr class="dropdown-divider" /></li>
-								<li><a class="dropdown-item" href="#">Something else here</a>
+									<li class="nav-item dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+									Dropdown
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li><a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
 								</li>
-							  </ul>
-							</li>
-						-->
+							-->
 								</ul>
 							</li>
 
@@ -165,7 +165,7 @@
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
 							<i class="bi bi-person-fill"> <?php echo $_SESSION['name']; ?></a></i>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+							<li><a class="dropdown-item" href="../logout.php">Cerrar sesión</a></li>
 						</ul>
 					</li>
 

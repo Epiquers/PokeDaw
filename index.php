@@ -34,14 +34,15 @@
 					$_SESSION['name']=$row["nombre"];
 					header("LOCATION:normal/indexNormal.php");
 				} else if ($row["rol"] == 1) {
+					$_SESSION['name']=$row["nombre"];
 					header("LOCATION:admin/indexAdmin.php");
 				} else {
 					$sms = "Rol incorrecto, consulte con el administrador";
 				}
 			} else if (mysqli_num_rows($result) > 1) {
-				//Fallo de integridad en la bbdd
+				$sms="Fallo de integridad en la bbdd";
 			} else {
-				$sms = "Usuario no registrado o pass incorrecto o email incorrecto";
+				$sms = "Usuario no registrado o password incorrecto o email incorrecto";
 			}
 		}
 	}
