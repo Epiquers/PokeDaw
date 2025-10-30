@@ -41,11 +41,11 @@
 				<div class="col-9 col-sm-8 col-md-6 col-xl-4 mb-5 mt-3">
 					<div class="row justify justify-content-center titulos mt-5 mb-4">
 						<div class="col-12 mt-5">
-							<p class="h2 text-center">Bienvenido a tú pokédex personal <?php echo $_SESSION['name']; ?></p>
+							<p class="h2 text-center">Bienvenido a tú PokéDaw personal <?php echo $_SESSION['name']; ?></p>
 						</div>
 						<div class="col-8 mt-4">
 							<div class="row">
-								<h1 class="text-center">Pokemon</h1>
+								<h1 class="text-center">PokeDaw</h1>
 							</div>
 						</div>
 					</div>

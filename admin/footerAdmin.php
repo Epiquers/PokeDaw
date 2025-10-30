@@ -19,27 +19,14 @@
 				</div>		
 				<div class="row justify-content-center align-items-center">
 					<div class="col-auto">						
-							<span class="pf"> PK</span><span class="d">DX</span>							
+							<span class="pf"> PK</span><span class="d">DW</span>							
 					</div>
 					<div class="col-12 ">
 						<p class="text-center">	Ctra. De Mula, 37 – Alguazas
 							30560 – Murcia</p>					
 					</div>					
 				</div>
-				<div class="row justify-content-center mb-2 links">
-					<div class=" col-auto" >
-						<a href="https://ces-vegamedia.es/aviso-legal/" target="_blank"> Aviso legal</a>					
-					</div>
-					<div class="col-auto" >
-						<a href="https://ces-vegamedia.es/privacidad/" target="_blank">Política de privacidad</a>					
-					</div>
-					<div class="col-auto" >
-						<a href="https://ces-vegamedia.es/cookies/" target="_blank">Política de cookies</a>					
-					</div>
-					<div class="col-auto" >
-						<a href="https://ces-vegamedia.es/condiciones-de-compra/" target="_blank">Condiciones generales de contratación</a>					
-					</div>
-				</div>
+				
 			</div>
 			<div class="row">	
 				<div class="col-12 text-center footer2">							
