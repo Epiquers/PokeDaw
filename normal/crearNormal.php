@@ -38,14 +38,14 @@ include("../config.php");
     <section>
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-9 col-sm-8 col-md-6 col-xl-4 mb-5 mt-3">
+                <div class="col-11 col-sm-10 col-md-7 col-xl-6 col-xxl-5 mb-5 mt-3">
                     <div class="row justify justify-content-center titulos mt-5 mb-4">
                         <div class="col-12 mt-5">
                             <p class="h2 text-center">Insertar carta</p>
                         </div>
                         <div class="col-10 mt-8">
-                            <form action="altas.php" method="post" enctype="multipart/form-data">
-                                <table width="400" border="0">
+                            <form action="insertarCarta.php" method="post" enctype="multipart/form-data">
+                                <table width="450">
                                     <tr>
                                         <td>Nombre</td>
                                         <td><input type="text" name="nombre" class="mb-3" required /></td>
@@ -54,7 +54,7 @@ include("../config.php");
                                         <td> Imagen </td>
                                         <td><input type="file" name="imagen" class="mb-3" required /></td>
                                     </tr>
-                                    <tr>
+                                    <tr height="100">
                                         <td ><input type="submit" name="button" class="btn" value="Enviar" /></td>
                                         <td ><input type="reset" name="button2" class="btn" value="Restablecer" /></td>
                                     </tr>

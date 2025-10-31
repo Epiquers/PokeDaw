@@ -79,17 +79,3 @@ include("../config.php");
 </body>
 
 </html>
-
-<?php
-include("conexion.php");
-
-$consulta = "SELECT * FROM pokemons";
-$result = mysqli_query($conn, $consulta);
-
-while ($row = mysqli_fetch_array($result)) {
-    print("Id: " . $row["codigo"] . "<br>");
-    print("Nombre: " . $row["producto"] . "<br>");
-    print "<img width='250' src=images/" . $row['imagen'] . "><br><br>";
-}
-mysqli_close($conn);
-?>
