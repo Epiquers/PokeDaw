@@ -7,31 +7,15 @@ include("conexion.php");
 // Añadimos url base
 include("../config.php");
 
-// Consulta para sacar el id de las imagenes
-$consulta1 = "SELECT MAX(id) as id FROM pokemons";
-
-// Ejecutamos consulta
-$result = mysqli_query($conn, $consulta1);
-
-// Obtiene obtenemos el resultado
-$row = mysqli_fetch_assoc($result);
-$id = $row['id'];
-
-// Comprobamos si el valor es null y asignamos valor
-if ($id === null) {
-    $id = 1;
-} else {
-    $id += 1;
-}
-
 // Recogida de datos
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $id = $_POST['carta'];
     $nom = $_POST['nombre'];
     $img = $id . ".png";
-    $nif = $_SESSION['nif'];
 
-    $consulta2 = "INSERT INTO pokemons (nombre, imagen, usuario) 
-    VALUES ('$nom', '$img', '$nif')";
+    $consulta2 = "UPDATE pokemons
+                SET nombre = '$nom', imagen = '$img'
+                WHERE id=$id";
 
     $ruta = "../images/" . $img;
     // Copiamos la imagen a la carpeta destino

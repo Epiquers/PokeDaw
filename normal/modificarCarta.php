@@ -41,12 +41,34 @@ include("../config.php");
                 <div class="col-11 col-sm-10 col-md-7 col-xl-6 col-xxl-5 mb-5 mt-3">
                     <div class="row justify justify-content-center titulos mt-5 mb-4">
                         <div class="col-12 mt-5">
-                            <p class="h2 text-center"><strong>Insertar carta</strong></p>
+                            <p class="h2 text-center"><strong>Modificar carta:</strong></p>
                             <br>
                         </div>
                         <div class="col-10 mt-8">
-                            <form action="insertarCarta.php" method="post" enctype="multipart/form-data">
+                            <form action="modificando.php" method="post" enctype="multipart/form-data">
                                 <table width="450">
+                                    <tr>
+                                        <td>
+                                            <p>Elige una carta</p>
+                                        </td>
+                                        <td>
+                                            <select name="carta" id="carta">
+                                                <?php
+                                                include("conexion.php");
+                                                $nif = $_SESSION['nif'];
+
+                                                $consulta = "SELECT * FROM pokemons WHERE usuario='$nif'";
+                                                $result = mysqli_query($conn, $consulta);
+
+                                                while ($row = mysqli_fetch_array($result)) {
+                                                    echo "<option value='" . $row['id'] . "'>" . $row['id'] . "-" . $row['nombre'] . "</option>";
+                                                }
+                                                mysqli_close($conn);
+                                                ?>
+
+                                            </select>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td>Nombre</td>
                                         <td><input type="text" name="nombre" class="mb-3" required /></td>
@@ -56,8 +78,8 @@ include("../config.php");
                                         <td><input type="file" name="imagen" class="mb-3" required /></td>
                                     </tr>
                                     <tr height="100">
-                                        <td ><input type="submit" name="button" class="btn" value="Enviar" /></td>
-                                        <td ><input type="reset" name="button2" class="btn" value="Restablecer" /></td>
+                                        <td><input type="submit" name="button" class="btn" value="Modificar" /></td>
+                                        <td><input type="reset" name="button2" class="btn" value="Restablecer" /></td>
                                     </tr>
                                 </table>
                             </form>

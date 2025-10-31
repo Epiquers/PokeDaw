@@ -24,11 +24,11 @@
 							<i class="bi bi-stars"></i>Crear carta</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="modificarCarta.php">
 							<i class="bi bi-pencil-square"></i>Modificar carta</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="eliminarCarta.php">
 							<i class="bi bi-trash-fill"></i>Eliminar carta</a>
 					</li>
 
