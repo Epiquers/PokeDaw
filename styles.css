@@ -12,6 +12,10 @@ section{
 	background-color: rgb(252, 227, 120);	
 }
 
+tbody{
+	background-color: rgb(252, 227, 120);
+}
+
 .btn{
 	background-color: #dd2c0d;
 	color:white;		
@@ -20,6 +24,7 @@ section{
 .btn:hover{
 	color:#dd2c0d;
 	border: 1px solid #dd2c0d;
+	background-color: rgb(252, 227, 120);
 }
 .h2{
 	font-size: 21pt;

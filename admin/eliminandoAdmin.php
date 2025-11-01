@@ -11,14 +11,14 @@ include("../config.php");
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['carta'];
 
-    $consulta2 = "DELETE FROM pokemons
+    $consulta = "DELETE FROM pokemons
                 WHERE id=$id";
 
     // Ejecutamos la sentencia SQL
-    mysqli_query($conn, $consulta2);
+    mysqli_query($conn, $consulta);
     // Mostramos error si lo hubiera
     echo mysqli_error($conn);
     // Cerramos conexión
     mysqli_close($conn);
-    header("LOCATION:mostrarNormal.php");
+    header("LOCATION:mostrarAdmin.php");
 }

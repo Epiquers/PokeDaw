@@ -33,9 +33,12 @@
 				if ($row["rol"] == 0) {
 					$_SESSION['nif']=$row["nif"];
 					$_SESSION['name']=$row["nombre"];
+					$_SESSION['bloqueado']=$row["bloqueado"];
+					$_SESSION['rol']=$row["rol"];
 					header("LOCATION:normal/indexNormal.php");
 				} else if ($row["rol"] == 1) {
 					$_SESSION['name']=$row["nombre"];
+					$_SESSION['rol']=$row["rol"];
 					header("LOCATION:admin/indexAdmin.php");
 				} else {
 					$sms = "Rol incorrecto, consulte con el administrador";

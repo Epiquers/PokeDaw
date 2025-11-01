@@ -1,5 +1,5 @@
 <?php
-	include("seguridad.php");
+	include("seguridadNormal.php");
 	include("../config.php");
 ?>
 <!DOCTYPE html>

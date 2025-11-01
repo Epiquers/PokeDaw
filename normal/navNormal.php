@@ -24,27 +24,24 @@
 							<i class="bi bi-stars"></i>Crear carta</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="modificarCarta.php">
+						<a class="nav-link" href="modificarNormal.php">
 							<i class="bi bi-pencil-square"></i>Modificar carta</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="eliminarCarta.php">
+						<a class="nav-link" href="eliminarNormal.php">
 							<i class="bi bi-trash-fill"></i>Eliminar carta</a>
 					</li>
 
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+							<i class="bi bi-person-fill"> <?php echo $_SESSION['name']; ?></a></i>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="../logout.php">Cerrar sesión</a></li>
+						</ul>
+					</li>
 
-
-					<ul class="navbar-nav mx-auto">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-								<i class="bi bi-person-fill"> <?php echo $_SESSION['name']; ?></a></i>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="../logout.php">Cerrar sesión</a></li>
-							</ul>
-						</li>
-
-					</ul>
-
+				</ul>
+				</ul>
 			</div>
 		</div>
 	</nav>

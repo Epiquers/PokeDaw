@@ -1,5 +1,5 @@
 <?php
-include("seguridadNormal.php");
+include("seguridadAdmin.php");
 include("../config.php");
 ?>
 <!DOCTYPE html>
@@ -27,10 +27,10 @@ include("../config.php");
     <?php
 
     // Cabecera
-    include("headerNormal.php");
+    include("headerAdmin.php");
 
     // Barra de navegación
-    include("navNormal.php");
+    include("navAdmin.php");
 
     ?>
 
@@ -41,23 +41,38 @@ include("../config.php");
                 <div class="col-11 col-sm-10 col-md-7 col-xl-6 col-xxl-5 mb-5 mt-3">
                     <div class="row justify justify-content-center titulos mt-5 mb-4">
                         <div class="col-12 mt-5">
-                            <p class="h2 text-center"><strong>Insertar carta</strong></p>
+                            <p class="h2 text-center"><strong>Eliminar carta:</strong></p>
                             <br>
                         </div>
                         <div class="col-10 mt-8">
-                            <form action="insertarCarta.php" method="post" enctype="multipart/form-data">
+                            <form action="eliminandoAdmin.php" method="post" enctype="multipart/form-data">
                                 <table width="450">
                                     <tr>
-                                        <td>Nombre</td>
-                                        <td><input type="text" name="nombre" class="mb-3" required /></td>
-                                    </tr>
-                                    <tr>
-                                        <td> Imagen </td>
-                                        <td><input type="file" name="imagen" class="mb-3" required /></td>
+                                        <td style="text-align: center;">
+                                            <p>Elige una carta</p>
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <select name="carta" id="carta">
+                                                <?php
+                                                include("conexion.php");
+                                                
+
+                                                $consulta = "SELECT * FROM pokemons";
+                                                
+                                                $result = mysqli_query($conn, $consulta);
+
+                                                while ($row = mysqli_fetch_array($result)) {
+                                                    echo "<option value='" . $row['id'] . "'>" . $row['id'] . "-" . $row['nombre'] . "</option>";
+                                                }
+                                                mysqli_close($conn);
+                                                ?>
+
+                                            </select>
+                                        </td>
                                     </tr>
                                     <tr height="100">
-                                        <td ><input type="submit" name="button" class="btn" value="Enviar" /></td>
-                                        <td ><input type="reset" name="button2" class="btn" value="Restablecer" /></td>
+                                        <td style="text-align: center;"><input type="submit" name="button" class="btn" value="Eliminar" /></td>
+                                        <td><input type="reset" name="button2" class="btn" value="Restablecer" /></td>
                                     </tr>
                                 </table>
                             </form>
@@ -71,7 +86,7 @@ include("../config.php");
 
     <?php
     // Footer
-    include("footerNormal.php");
+    include("footerAdmin.php");
     ?>
 
     <script src="../Bootstrap/js/bootnavbar.js"></script>
@@ -82,17 +97,3 @@ include("../config.php");
 </body>
 
 </html>
-
-<?php
-include("conexion.php");
-
-$consulta = "SELECT * FROM pokemons";
-$result = mysqli_query($conn, $consulta);
-
-while ($row = mysqli_fetch_array($result)) {
-    print("Id: " . $row["codigo"] . "<br>");
-    print("Nombre: " . $row["producto"] . "<br>");
-    print "<img width='250' src=images/" . $row['imagen'] . "><br><br>";
-}
-mysqli_close($conn);
-?>
