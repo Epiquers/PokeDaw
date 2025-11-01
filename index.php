@@ -74,11 +74,15 @@
 									<div class="col-12 mt-3 mb-2">
 										<input type="password" class="form-control" id="pass" name="pass" placeholder="CONTRASEÑA" required>
 									</div>
-									<div class="col-12 mt-4 d-grid mb-5">
-										<button class="btn btn-lg" type="submit">INICIAR SESIÓN</button>
+									<div class="col-12 mt-4 d-grid mb-5 text-center">
+										<button class="btn btn-lg mb-2" type="submit">INICIAR SESIÓN</button>
 										<?php
 										if (isset($sms)) {
 											echo "$sms";
+										}
+										if (isset($_SESSION['block']) && $_SESSION['block']==1){
+											echo "<p>Usuario bloqueado temporalmente</p>";
+											unset($_SESSION['block']);
 										}
 										?>
 

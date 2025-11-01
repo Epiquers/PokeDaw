@@ -53,7 +53,7 @@ include("../config.php");
                                         <th>Email</th>
                                         <th>Teléfono</th>
                                         <th>Contraseña</th>
-                                        <th>Bloquear usuario</th>
+                                        <th>Bloquear</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -70,13 +70,13 @@ include("../config.php");
 
                                         // Checkbox para bloquear/desbloquear usuario
                                         echo "<td class='text-center'>
-                <form action='bloquear.php' method='post' style='margin:0;'>
-                    <input type='hidden' name='nif' value='" . $row['nif'] . "'>
-                    <input type='hidden' name='bloqueado' value='0'>
-                    <input type='checkbox' name='bloqueado' value='1' onchange='this.form.submit()' " .
-                                            ($row['bloqueado'] == 1 ? 'checked' : '') . ">
-                </form>
-            </td>";
+                                                <form action='bloquear.php' method='post' style='margin:0;'>
+                                                    <input type='hidden' name='nif' value='" . $row['nif'] . "'>
+                                                    <input type='hidden' name='bloqueado' value='0'>
+                                                    <input type='checkbox' name='bloqueado' value='1' onchange='this.form.submit()' " .
+                                                                            ($row['bloqueado'] == 1 ? 'checked' : '') . ">
+                                                </form>
+                                            </td>";
 
                                         echo "</tr>";
                                     }

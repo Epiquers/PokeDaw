@@ -46,7 +46,7 @@ include("../config.php");
                         </div>
                         <div class="col-10 mt-8">
                             <form action="insertarCarta.php" method="post" enctype="multipart/form-data">
-                                <table width="450">
+                                <table width="250">
                                     <tr>
                                         <td>Nombre</td>
                                         <td><input type="text" name="nombre" class="mb-3" required /></td>

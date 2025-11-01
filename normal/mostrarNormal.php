@@ -38,7 +38,7 @@ include("../config.php");
                             <p class="h2 text-center"><strong>Listado de cartas:</strong></p>
                         </div>
                         <div class="col-12 mt-4">
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center mb-5">
                                 <?php
                                 include("conexion.php");
                                 

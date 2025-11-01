@@ -46,7 +46,7 @@ include("../config.php");
                         </div>
                         <div class="col-10 mt-8">
                             <form action="modificandoNormal.php" method="post" enctype="multipart/form-data">
-                                <table width="450">
+                                <table width="200">
                                     <tr>
                                         <td>
                                             <p>Elige una carta</p>
