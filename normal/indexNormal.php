@@ -16,8 +16,8 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 	<link href="../styles.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="../img/grifo.ico">
-	<title>POKEDEX</title>
+	<link rel="icon" type="image/x-icon" href="../img/pokeball.png">
+    <title>PokeDaw</title>
 
 
 </head>
